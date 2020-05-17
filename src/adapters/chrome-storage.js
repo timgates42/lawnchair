@@ -136,7 +136,7 @@ Lawnchair.adapter('chrome-storage', (function() {
 
         batch: function (ary, callback) {
             var saved = []
-            // not particularily efficient but this is more for sqlite situations
+            // not particularly efficient but this is more for sqlite situations
             for (var i = 0, l = ary.length; i < l; i++) {
                 this.save(ary[i], function(r){
                     saved.push(r)
